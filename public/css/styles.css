@@ -18,6 +18,64 @@ html{
     scroll-behavior: smooth;
 }
 
+.middlepos
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.nav {
+    background-color: #272727;
+    height: 70px;
+    width: 1055px;
+    position: relative;
+    border-radius: 30px;
+    padding-inline:30px;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+
+  .nav .nav-header .nav-title img{
+    height: 9vh;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+    transition: 0.3s;
+  }
+  
+  .nav > .nav-links > a:hover {
+    color: #FF5555;
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+
 .hero{
    display: flex; 
    justify-content: center;
@@ -73,76 +131,7 @@ html{
     align-items: center;
   
 }
-.navbar{
-    z-index: 100;
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1054px;
-    height: 12vh;
-    color: #272727;
-    background: #272727;
-    border-radius:30px;
-}
 
-.navbar .heading{
-    margin-left: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.navbar .heading img{
-    height: 10vh;
-    cursor: pointer;
-}
-.navbar .heading p {
-    margin: 0;
-    color: #FF5555;
-    font-size: 4.1vh;
-}
-
-
-
-.navbar .content{
-    display: flex;
-    gap:30px;
-    cursor: pointer;
-    color: #FFFFFF;
-    margin-right: 30px;
-    text-transform: uppercase;
-}
-
-.navbar .content a{
-    position: relative;
-    text-decoration: none;
-    font-family: "Poppins",sans-serif;
-    color: #ffffff;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.navbar .content a:hover{
-    color: #FF5555;
-}
-
-.navbar .content a::after{
-    content: '';
-    height: 2px;
-    width: 100%;
-    background: #ffffff;
-    position: absolute;
-    display: block;
-    opacity: 0;
-    transition: all 0.3s;
-    pointer-events: none;
-}
-
-.navbar .content a:focus::after,
-.navbar .content a:hover::after{
-    opacity: 1;
-}
 
 .adjust{
     margin-top: 80px;
@@ -167,7 +156,19 @@ html{
     color: #FF5555;
 }
 
+.myself .tech i{
+    font-size: 37px;
+ transition: 0.3s;
+}
+.myself .tech i:hover{
+    color: #FF5555;
+}
 
+.myself .tech{
+    display: flex;
+    margin-top: 8px;
+    gap: 13px;
+}
 
 
 .introduction{
@@ -266,6 +267,12 @@ html{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.features a{
+    margin: 0;
+    color: inherit;
+    text-decoration: none;
 }
 
 .features:hover .icon {
@@ -502,6 +509,322 @@ html{
     overflow: hidden;
 }
 
+.styling{
+    width: 1050px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2,510px);
+    gap: 25px;
+}
+
+.styling .decor{
+    border-radius: 30px;
+    border: solid;
+    border-color: #eee;
+    border-width: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: #FFFFFF;
+    background-color: #27272727;
+}
+
+.styling .decor .content{
+    margin: 20px;
+}
+
+.styling .second .content h2{
+    margin-bottom: 2vh;
+}
+
+
+.styling .first .content .SkillBar {
+    border-radius: 0 30px 30px 0;
+    width: 90%;
+    height:40px;
+    position: relative;
+    background:#272727;
+    margin: 20px auto;
+}
+
+#Skill-HTML {
+    width: 100%;
+    animation: Animate-HTML 4s;
+    -webkit-animation: Animate-HTML 4s;
+    -moz-animation: Animate-HTML 4s;
+    -o-animation: Animate-HTML 4s;
+    height: 40px;
+    border-radius: 0 30px 30px 0;
+    position: absolute;
+    background-color: #FF5555;
+}
+@keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 100%}
+}@-webkit-keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 100%}
+}@-moz-keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 100%}
+}@-o-keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 100%}
+}#Skill-CSS {
+    animation: Animate-CSS 5s;
+    -webkit-animation: Animate-CSS 5s;
+    -moz-animation: Animate-CSS 5s;
+    -o-animation: Animate-CSS 5s;
+    width: 85%;
+    height: 40px;
+    border-radius: 0 30px 30px 0;
+    position: absolute;
+    background-color: #FF5555;
+}
+@keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 85%}
+}@-webkit-keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 85%}
+}@-moz-keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 85%}
+}@-o-keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 70%}
+}#Skill-jQuery {
+    animation: Animate-jQuery 5s;
+    -webkit-animation: Animate-jQuery 5s;
+    -moz-animation: Animate-jQuery 5s;
+    -o-animation: Animate-jQuery 5s;
+    width: 80%;
+    height: 40px;
+    border-radius: 0 30px 30px 0;
+    position: absolute;
+    background-color: #FF5555;
+}
+@keyframes Animate-jQuery {
+    from {
+    width: 10px;
+}
+to {
+    width: 80%}
+}@-webkit-keyframes Animate-jQuery {
+    from {
+    width: 10px;
+}
+to {
+    width: 80%}
+}@-moz-keyframes Animate-jQuery {
+    from {
+    width: 10px;
+}
+to {
+    width: 80%}
+}@-o-keyframes Animate-jQuery {
+    from {
+    width: 10px;
+}
+to {
+    width: 40%}
+}#Skill-JS {
+    animation: Animate-JS 4s;
+    -webkit-animation: Animate-JS 4s;
+    -moz-animation: Animate-JS 4s;
+    -o-animation: Animate-JS 4s;
+    width: 75%;
+    height: 40px;
+    border-radius: 0 30px 30px 0;
+    position: absolute;
+    background-color: #FF5555;
+}
+@keyframes Animate-JS {
+    from {
+    width: 10px;
+}
+to {
+    width: 75%}
+}@-webkit-keyframes Animate-JS {
+    from {
+    width: 10px;
+}
+to {
+    width: 75%}
+}@-moz-keyframes Animate-JS {
+    from {
+    width: 10px;
+}
+to {
+    width: 75%}
+}@-o-keyframes Animate-JS {
+    from {
+    width: 10px;
+}
+to {
+    width: 75%}
+}#Skill-XML {
+    animation: Animate-XML 4s;
+    -webkit-animation: Animate-XML 4s;
+    -moz-animation: Animate-XML 4s;
+    -o-animation: Animate-XML 4s;
+    width: 64%;
+     height: 40px;
+    border-radius: 0 30px 30px 0;
+    position: absolute;
+    background-color: #FF5555;
+}
+@keyframes Animate-XML {
+    from {
+    width: 10px;
+}
+to {
+    width: 64%}
+}@-webkit-keyframes Animate-XML {
+    from {
+    width: 10px;
+}
+to {
+    width: 64%}
+}@-moz-keyframes Animate-XML {
+    from {
+    width: 10px;
+}
+to {
+    width: 64%}
+}@-o-keyframes Animate-XML {
+    from {
+    width: 10px;
+}
+to {
+    width: 64%}
+}#Skill-C {
+    animation: Animate-C 4s;
+    -webkit-animation: Animate-C 4s;
+    -moz-animation: Animate-C 4s;
+    -o-animation: Animate-C 4s;
+    width: 72%;
+    height: 40px;
+    border-radius: 0 30px 30px 0;
+    position: absolute;
+    background-color: #FF5555;
+}
+@keyframes Animate-C {
+    from {
+    width: 10px;
+}
+to {
+    width: 72%}
+}@-webkit-keyframes Animate-C {
+    from {
+    width: 10px;
+}
+to {
+    width: 72%}
+}@-moz-keyframes Animate-C {
+    from {
+    width: 10px;
+}
+to {
+    width: 72%}
+}@-o-keyframes Animate-C {
+    from {
+    width: 10px;
+}
+to {
+    width: 72%}
+}
+.Skill-Area {
+    z-index: 1;
+    float: left;
+   
+    margin-top: 15px;
+    margin-left: 15px;
+    text-shadow: none;
+    color: #fff;
+
+    font-size: 15px;
+}
+
+.PercentText {
+    z-index: 3;
+    position: relative;
+    padding-right: 15px;
+    margin-top: 15px;
+    float: right;
+    text-shadow: none;
+    color: #fff;
+
+    font-size: 12px;
+}
+
+
+
+.styling .decor .content .pointer{
+    display: flex;
+    gap: 10px;
+    margin-block: 5px;
+}
+
+.styling .decor .content .pointer i{
+    color: #FF5555;
+}
+
+.styling .decor .content a{
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.styling .decor .content a:hover{
+    color: #FF5555;
+    }
+
+.styling .first, .second{
+    width: 510px;
+    height: 560px;
+}
+
+.styling .third{
+    width: 1045px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 200px;
+    margin-bottom: 26vh;
+}
+
+.styling .third .content h2{
+    margin-bottom: 2vh;
+}
+
+
 #contactSection::before {
     content: '';
     position: absolute;
@@ -712,15 +1035,11 @@ button:hover {
 
 @media (max-width:900px){
 
-    .navbar{
-        width:600px;
+    .myself .tech i{
+        font-size: 27px
     }
 
-    .navbar .content{
-        font-size: 12px;
-        gap: 8px;
-    }
-
+   
 
     .hero{
         margin-top: 10vh;
@@ -887,8 +1206,13 @@ margin-top: 10px;
  }
 
  #ProjectWork h1{
-    font-size: 25px;
+    font-size: 35px;
+    margin-bottom: 1vh;
  }
+
+ .container .projects .card-5 .material p {
+    margin-inline: 70px;
+}
 
  #contactSection span 
  {
@@ -917,25 +1241,110 @@ margin-top: 10px;
     margin-inline: 60px;
  }
 
+ .nav{
+    width: 620px;
+ }
+
+ .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    margin-top: 1.2vh;
+    margin-right: 30px;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    cursor: pointer;
+    background-color: #141414c4;
+    border-radius: 10px;
+    z-index: 20;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: 32vh;
+    overflow-y: hidden;
+    margin-top: 30px;
+    border-radius: 30px;
+    background-color: #272727;
+    padding: 20px;
+}
+
+.styling{
+    width: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.styling .first , .second , .third{
+    width: 550px;
+    height: 560px;
+}
+
 }
 
 @media (max-width:600px){
 
-    .navbar .content{
-        font-size: 10.5px;
-        gap: 7px;
+    .styling .first , .second {
+        width: 356px;
+        height: 560px;
+    }
+    
+    .styling .third{
+        width:356px;
+        height: 560px;
+    }
+     
+
+    .nav{
+        width: 356px;
     }
 
+  
+
+    .hero .hero1 p {
+        margin-top: 26px;
+    }
+
+    .hero .hero1 {
+        width: 324px;
+    }
 
     
-    .navbar{
-        width:450px;
-    }
-
-
     .introduction .backdrop {
-        height: 550px;
-        width: 450px;
+        height: 453px;
+        width: 356px;
+        margin-top: 8vh;
     }
 
     .introduction .backdrop .myself {
@@ -951,14 +1360,20 @@ margin-top: 10px;
     input,textarea {
     
     height: 40px;
-    width: 390px;
+    width: 297px;
     
+}
+
+.introduction .backdrop .personalisation {
+  
+    gap: 6px;
+    margin-left: 6px;
 }
 
 .contactMe{
     display: flex;
     flex-direction: column;
-    width: 450px;
+    width: 356px;
     height: 500px;
  }
 
@@ -993,9 +1408,14 @@ margin-top: 10px;
 
 .introduction .backdrop .backseat {
    
-    height:500px;
-    width: 300px;
+    height:407px;
+    width: 138px;
     
+}
+
+.introduction .backdrop .backseat .image img {
+    height: 96px;
+    width: 98px;
 }
 
 
@@ -1005,6 +1425,10 @@ margin-top: 10px;
 .container .projects .card-4 .image img,
 .container .projects .card-5 .image img{
    height: 250px;
-   width:450px;
+   width:356px;
+}
+
+.magic {
+    gap: 13.5px;
 }
 }
